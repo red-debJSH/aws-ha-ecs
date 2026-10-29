@@ -1,4 +1,4 @@
-# 1 .Crear VPC con subredes
+# 1. Crear VPC con subredes
 Crear 4 subredes para cumplir con las reglas de AWS, seguridad y supervivencia ante caídas, 2 para ELB y 2 para RDS.
 ## Servicios utilizados
 - Console de AWS
@@ -137,7 +137,7 @@ Crear dos gateways (una por subnet privada) por higiene
         - En detalles de la Route table privada > Subnet associations > Edit subnet associations
           - Seleccionamos la que correcponde (2a)
 
-## Diagrama representativo
+## 2. Diagrama representativo
 ```mermaid
 flowchart TD
 I["Internet"]
@@ -192,3 +192,10 @@ classDef green stroke:#0f0
 classDef blue stroke:#00f
 
 ```
+
+## 3.Eliminar Recursos
+1. NAT Gateways
+2. Direcciones IP elásticas (EIP)
+3. Rutas y tablas de enrutamiento
+   1. Quitar asociacion de subnets
+4. Subredes y VPC

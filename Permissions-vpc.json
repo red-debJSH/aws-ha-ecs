@@ -13,7 +13,10 @@
 				"ec2:DescribeAddresses",
 				"ec2:DescribeAvailabilityZones",
 				"ec2:DescribeAccountAttributes",
-				"ec2:DescribeTags"
+				"ec2:DescribeTags",
+				"ec2:DescribeAddressesAttribute",
+				"ec2:DescribeVpcAttribute",
+				"ec2:DescribeNetworkInterfaces"
 			],
 			"Resource": [
 				"*"
@@ -40,7 +43,16 @@
 				"ec2:CreateRoute",
 				"ec2:AllocateAddress",
 				"ec2:CreateNatGateway",
-				"ec2:AssociateAddress"
+				"ec2:AssociateAddress",
+				"ec2:ReleaseAddress",
+				"ec2:DeleteVpc",
+				"ec2:DisassociateRouteTable",
+				"ec2:DeleteRouteTable",
+				"ec2:DeleteSubnet",
+				"ec2:DeleteNatGateway",
+				"ec2:DisassociateAddress",
+				"ec2:DetachInternetGateway",
+				"ec2:DeleteInternetGateway"
 			],
 			"Resource": [
 				"*"
